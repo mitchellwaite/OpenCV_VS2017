@@ -40,7 +40,13 @@ Step 5: Press "OK"
 
 You should now be able to compile your programs.
 
+### Working Directory
 
+By default, visual studio uses the directory containing the `.vcxproj` file as the working directory. 
+
+In this case, that directory is called "Project1"
+
+You'll need to place any resource files in that directory to be able to access them using relative paths in your program
 
 
 ## Sources
