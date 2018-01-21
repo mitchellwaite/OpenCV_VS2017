@@ -25,7 +25,20 @@ Step 5: Probably a good idea to restart your computer at this point
 
 
 ### Easy Method
-If you have Visual Studio 2017, the project file in this repository is set up already. Make a copy of it. You can build for "Debug" or "Release". 64-bit mode is the only one supported
+
+If you have Visual Studio 2017 or 2015, the project file in this repository is mostly set up already. Make a copy of it. You can build for "Debug" or "Release". 64-bit mode is the only one supported
+
+Step 1: Open the solution file.
+
+Step 2: Right click on "Project 1" in the solution explorer.
+
+Step 3: Under `Configuration Properties -> General` open the `Windows SDK` dropdown menu.
+
+Step 4: Select the first item on the list.
+
+Step 5: Press "OK"
+
+You should now be able to compile your programs.
 
 
 
