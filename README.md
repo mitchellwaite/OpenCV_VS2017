@@ -2,7 +2,7 @@
 
 Step 1: Get the chocolatey package manager. Find the instructions at https://chocolatey.org/
 
-Step 2: Install openCV with "choco install -y opencv". At the time of writing, chocolatey has version `3.4.0`
+Step 2: Open a command prompt as an administrator. Install openCV with "choco install -y opencv". At the time of writing, chocolatey has version `3.4.0`
 
 Alternatively, install OpenCV from `https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.4.0/opencv-3.4.0-vc14_vc15.exe/download`
 
