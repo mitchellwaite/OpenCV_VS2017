@@ -8,8 +8,9 @@ Step 2: Open a command prompt as an administrator. Install openCV with `choco in
 ## Manual Install
 Alternatively, install OpenCV from `https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.4.0/opencv-3.4.0-vc14_vc15.exe/download`
 
-## OpenCV with extra goodies
-The chocolatey version doesn't come with all the extra modules and non-free algorithms. If you need those, download this package: `https://drive.google.com/file/d/193m8zam2k2ybu3BZ2iF2me07hrGS5_Iw/view`.
+## OpenCV with extra goodies and Debug Libs
+The chocolatey version doesn't come with all the extra modules and non-free algorithms. If you need those, or need the debug version of OpenCV, download this package: `https://drive.google.com/file/d/193m8zam2k2ybu3BZ2iF2me07hrGS5_Iw/view`.
+
 This package only supports VC15/Visual Studio 2017. Drop the `tools` folder from the 7z file in to C:, and follow the instructions from step 3 for VS2017.
 
 Step 3: Install Visual Studio  2015 or 2017. Ensure you have "Desktop Development with C++" support enabled.
@@ -55,7 +56,14 @@ You'll need to place any resource files in that directory to be able to access t
 
 If you want to use these libraries, but don't want to install visual studio, you can install the microsoft compiler by itself: [Visual C++ 2017 Build Tools](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15)
 
-Instructions for Eclipse: http://codewriterstips.blogspot.ca/2012/05/using-microsoft-c-compiler-with-eclipse.html
+Instructions for Eclipse and the Microsoft Compiler: http://codewriterstips.blogspot.ca/2012/05/using-microsoft-c-compiler-with-eclipse.html
+
+I will post exact instructions for eclipse soon. For now, here are the required paths for eclipse. This will require %PATH% and %OPENCV_DIR% to be set correctly.
+
+Additional Include Directories: $(OPENCV_DIR)\..\..\include
+Library Search Path: $(OPENCV_DIR)\lib
+Additional Dependencies (Debug): opencv_world340d
+Additional Dependencies (Release): opencv_world
 
 ## Sources
 https://docs.opencv.org/2.4/doc/tutorials/introduction/windows_install/windows_install.html
