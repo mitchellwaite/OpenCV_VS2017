@@ -1,10 +1,16 @@
-# Installation of OpenCV 3.4.0 on Windows with Visual Studio 2015 or 2017
+# Installation of OpenCV 3.4.0 on Windows, compatible with Visual C++ 2015 or 2017 Libraries
 
 Step 1: Get the chocolatey package manager. Find the instructions at https://chocolatey.org/
 
 Step 2: Open a command prompt as an administrator. Install openCV with `choco install -y opencv`. At the time of writing, chocolatey has version `3.4.0`
 
+
+## Manual Install
 Alternatively, install OpenCV from `https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.4.0/opencv-3.4.0-vc14_vc15.exe/download`
+
+## OpenCV with extra goodies
+The chocolatey version doesn't come with all the extra modules and non-free algorithms. If you need those, download this package: `https://drive.google.com/file/d/193m8zam2k2ybu3BZ2iF2me07hrGS5_Iw/view`.
+This package only supports VC15/Visual Studio 2017. Drop the `tools` folder from the 7z file in to C:, and follow the instructions from step 3 for VS2017.
 
 Step 3: Install Visual Studio  2015 or 2017. Ensure you have "Desktop Development with C++" support enabled.
 
@@ -21,10 +27,7 @@ With the previous command window, set your PATH with the following command:
 
 Step 5: Probably a good idea to restart your computer at this point
 
-## Project Creation
-
-
-### Easy Method
+##  Visual Studio Project Creation
 
 If you have Visual Studio 2017 or 2015, the project file in this repository is mostly set up already. Make a copy of it. You can build for "Debug" or "Release". 64-bit mode is the only one supported
 
@@ -48,6 +51,11 @@ In this case, that directory is called "Project1"
 
 You'll need to place any resource files in that directory to be able to access them using relative paths in your program
 
+# Alternate IDEs (You don't need Visual Studio)
+
+If you want to use these libraries, but don't want to install visual studio, you can install the microsoft compiler by itself: [Visual C++ 2017 Build Tools](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15)
+
+Instructions for Eclipse: http://codewriterstips.blogspot.ca/2012/05/using-microsoft-c-compiler-with-eclipse.html
 
 ## Sources
 https://docs.opencv.org/2.4/doc/tutorials/introduction/windows_install/windows_install.html
