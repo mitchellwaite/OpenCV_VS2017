@@ -54,7 +54,10 @@ You'll need to place any resource files in that directory to be able to access t
 
 # Alternate IDEs (You don't need Visual Studio)
 
-If you want to use these libraries, but don't want to install visual studio, you can install the microsoft compiler by itself: [Visual C++ 2017 Build Tools](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15)
+If you want to use these libraries, but don't want to install visual studio, you can install the microsoft compiler and runtime by itself:
+
+[Visual C++ 2017 Build Tools](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15)
+[Visual C++ 2017 Runtime](https://aka.ms/vs/15/release/VC_redist.x64.exe)
 
 Instructions for Eclipse and the Microsoft Compiler: http://codewriterstips.blogspot.ca/2012/05/using-microsoft-c-compiler-with-eclipse.html
 
