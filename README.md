@@ -1,15 +1,14 @@
-# Installation of OpenCV 3.4.0 on Windows, compatible with Visual C++ 2015 or 2017 Libraries
+# Installation of OpenCV 3.4.0 on Windows, compatible with VC++ 2015 or 2017
 
 Step 1: Get the chocolatey package manager. Find the instructions at https://chocolatey.org/
 
 Step 2: Open a command prompt as an administrator. Install openCV with `choco install -y opencv`. At the time of writing, chocolatey has version `3.4.0`
 
-
 ## Manual Install
 Alternatively, install OpenCV from `https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.4.0/opencv-3.4.0-vc14_vc15.exe/download`
 
 ## OpenCV with extra goodies and Debug Libs
-The chocolatey version doesn't come with all the extra modules and non-free algorithms. If you need those, or need the debug version of OpenCV, download this package: `https://drive.google.com/file/d/193m8zam2k2ybu3BZ2iF2me07hrGS5_Iw/view`.
+The chocolatey version *doesn't* come with all the extra modules and non-free algorithms. If you need those, or want the debug version of OpenCV, download this package: `https://drive.google.com/file/d/193m8zam2k2ybu3BZ2iF2me07hrGS5_Iw/view`.
 
 This package only supports VC15/Visual Studio 2017. Drop the `tools` folder from the 7z file in to C:, and follow the instructions from step 3 for VS2017.
 
